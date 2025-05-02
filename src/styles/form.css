@@ -22,14 +22,13 @@ form{
     }
 
     & .hour-date{
-        display: flex;
-        flex-direction: column;
+        display: flex; 
         gap: 1rem;
         margin-bottom: 1.75rem;
 
         & > div{
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
 
             & div{
                 outline: 1px solid var(--border-primary);
@@ -117,4 +116,19 @@ input[type="number"]::-webkit-outer-spin-button {
  
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+@media (width < 1024px) {
+    & .hour-date{
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media (width >= 1024px) {
+    & .hour-date{
+        & div{
+            flex: 1;
+        }
+    }
 }

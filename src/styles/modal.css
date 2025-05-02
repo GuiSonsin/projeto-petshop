@@ -76,4 +76,11 @@
 .hidden {
     display: none;
 }
+
+
+@media (width > 1024px) {
+    .modal-content{
+        width: 60%;
+    }
+}
   
