@@ -1,0 +1,120 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & > div{
+        display: flex; 
+        flex-direction: column;
+
+        & div{
+            display: flex;
+            flex-direction: row;
+            outline: 1px solid var(--border-primary);
+            border-radius: .5rem;
+            padding: .75rem;
+            width: 100%; 
+        }
+
+        & img{
+            width: 1.25rem;
+        }
+    }
+
+    & .hour-date{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.75rem;
+
+        & > div{
+            display: flex;
+            flex-direction: column;
+
+            & div{
+                outline: 1px solid var(--border-primary);
+                border-radius: .5rem;
+                display: flex;
+                align-items: center;
+                padding: .75rem;
+
+                & select{
+                    color: var(--content-secondary);
+                    font-family: var(--font-family-inter);
+                    font-weight: 500;
+                    line-height: 150%;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+
+                    & option{ 
+                        background-color: var(--background-tertiary);
+                    }
+                }
+            }
+        }
+    }
+
+    & input{
+        color: var(--content-secondary);
+        font-family: var(--font-family-inter);
+        font-weight: 500;
+        line-height: 150%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+
+    & label {
+        font: var(--label-md);
+        color: var(--content-primary);
+        margin-bottom: .25rem;
+    }
+
+    & textarea{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--content-secondary);
+        font-family: var(--font-family-inter);
+        font-weight: 500;
+        line-height: 150%;
+        resize: none; 
+    }
+
+    & label + div{
+        gap: 0.5rem;
+    }
+
+    & > section div > div:hover{
+        outline: 1px solid var(--border-secondary);
+    }
+
+    & > section div > div:focus-within{
+        outline: 1px solid var(--border-brand);
+    }
+
+    & div > div:hover {
+        outline: 1px solid var(--border-secondary);
+    }
+
+    & div > div:focus-within {
+        outline: 1px solid var(--border-brand);
+    }
+
+    & button:hover{
+        background-color: var(--background-highlights);
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+input[type="number"] {
+  -moz-appearance: textfield;
+}

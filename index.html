@@ -127,10 +127,107 @@
         </section>
 
         <footer>
-            <button type="button">
+            <button type="button" id="btn-schedules">
                 Novo agendamento
             </button>
         </footer>
+
+        <div id="modalContainer" class="modal-container hidden">
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <button type="button" class="btn-cancel-schedule">
+                    <img src="src/assets/icons/cancel.svg" alt="ícone de X">
+                </button>
+
+                <div>
+                    <h2>Agende um atendimento</h2>
+                    <p>Preencha os dados do cliente para realizar o agendamento:</p>
+                </div>
+
+                <form>
+                    <div>
+                        <label for="name">
+                            Nome do tutor
+                        </label>
+
+                        <div>
+                            <img src="/src/assets/icons/user.svg" alt="ícone de usuário">
+                            <input type="text" name="name" id="name" placeholder="Nome Completo" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="name-pet">
+                            Nome do pet
+                        </label>
+    
+                        <div>
+                            <img src="/src/assets/icons/pet-paw.svg" alt="ícone da pata do pet">
+                            <input type="text" name="name-pet" id="name-pet" placeholder="Nome do pet" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="phone">
+                            Telefone
+                        </label>
+    
+                        <div>
+                            <img src="/src/assets/icons/phone.svg" alt="ícone de telefone">
+                            <input type="number" name="phone" id="phone" placeholder="(00) 0 0000 - 0000" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="service-discription">
+                            Descrição do serviço
+                        </label>
+    
+                        <div>
+                            <textarea name="service-description" id="service-description" placeholder="Escreva aqui o serviço prestado" required cols="90" rows="7"></textarea>
+                        </div>
+                    </div>
+
+                    <section class="hour-date">
+                        <div>
+                            <label for="date-service">
+                                Data
+                            </label>
+                            <div>
+                                <img src="/src/assets/icons/calendar.svg" alt="ícone de calendário">
+                                <input type="date" name="date-service" id="date-service" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="service-hour">
+                                Hora
+                            </label>
+        
+                            <div>
+                                <img src="/src/assets/icons/clock.svg" alt="ícone de relógio">
+                                <select name="service-hour" id="service-hour" required>
+                                    <option value="">12:00</option>
+                                    <option value="">13:00</option>
+                                    <option value="">14:00</option>
+                                    <option value="">15:00</option>
+                                    <option value="">16:00</option>
+                                    <option value="">17:00</option>
+                                    <option value="">18:00</option>
+                                    <option value="">19:00</option>
+                                    <option value="">20:00</option>
+                                    <option value="">21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <button id="btnToSchedule" class="btn-to-schedule" type="button">Agendar</button>
+                </form>
+
+            </div>
+        </div>
      </main>
      
 </body>
