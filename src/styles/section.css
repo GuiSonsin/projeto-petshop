@@ -55,6 +55,12 @@ main > section{
             outline: none;
             cursor: pointer;
         }
+
+        & .cancel-schedule:hover{
+            font: var(--link);
+            color: var(--content-primary);
+            text-decoration: underline;
+        }
     }
 
     & hr{
