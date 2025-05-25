@@ -11,5 +11,6 @@ import "./styles/form.css"
 
 import "./modules/form/submit.js"
 import "./modules/form/modal.js"
-import "./modules/form/clear-inputs.js"
-import "./modules/form/load-select-input.js"
+import "./modules/form/hours-click.js" 
+import "./modules/form/hours-load.js" 
+

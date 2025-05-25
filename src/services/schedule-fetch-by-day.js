@@ -8,7 +8,7 @@ export async function scheduleFetchByDay({ date }) {
         const data = await response.json()
 
         const dailySchedules = data.filter((schedule) => 
-            dayjs(date).isSame(schedule.when, "day")
+            dayjs(date).isSame(schedule.date, "day")
         )
 
         return dailySchedules
